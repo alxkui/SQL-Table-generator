@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+input, label {
+	display: block;
+}
+
+code#query {
+	background-color: #00607F;
+	display: block;
+	margin: 5px;
+	padding: 10px;
+	color: white;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	transition: 0.2s all ease-in-out;
+}
+
+#sqlMaker {
+	display: grid;
+	grid-template-columns: 60% auto;
+	grid-template-rows: auto;
+	grid-gap: 10px;
+	color: black;
+	font-family: 'open Sans', sans-serif;
+}
+
+h2 {
+	color: #00607F;
+	font-family: 'roboto', arial;
+	font-size: 2em;
+	margin-top: 0;
+}
+
+.one,
+.two {
+	border: 2px solid #e2e2e2;
+}
+
+.one {
+	padding: 20px;
+	grid-column-start: 1;
+}
+
+.two {
+	padding: 20px;
+	grid-column-start: 2;
+}
+
+table {
+	width: auto;
+	text-align: left;
+}
+
+td {
+	padding-right: 10px;
+}
+
+table.secondary {
+	width: 30%;
+}
+
+input:disabled {
+	background: #eee;
+}
+
+input[type="checkbox"]:disabled {
+	background: #eee;
+}
+
+input,
+select {
+	transition: 0.2s all ease-in-out;
+	font-family: 'open Sans', sans-serif;
+	margin-bottom: 25px;
+	border: none;
+	background-color: #00607F;
+	font-size: 1.3em;
+	padding: 5px;
+	color: white;
+}
+
+input:active {
+	border: none;
+}
+
+label {
+	font-weight: bold;
+}
+
+.regular-checkbox {
+	transition: 0.2s all ease-in-out;
+	text-align: center;
+	-webkit-appearance: none;
+	background-color: #00607F;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 12px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.regular-checkbox:active, .regular-checkbox:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked {
+	background-color: #4CD2FF;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.regular-checkbox:checked:after {
+	content: '\2714';
+	font-size: 18px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: white;
+}
+
+.red {
+	color: red;
+}
+
+button {
+	appearance: none;
+	border: none;
+	font-family: 'roboto', arial;
+	cursor: pointer;
+}
+
+#btnNext,
+#btnAdd,
+#btnCopy {
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	padding: 15px 10px;
+	text-align: center;
+	display: inline-block;
+	background-color: #00607F;
+}
+
+#btnNext:hover,
+#btnAdd:hover,
+#btnCopy:hover {
+	background-color: #4CD2FF;
+}
+
+#btnCopy {
+	float: right;
+	display: none;
+}
+
+.output {
+	border: 2px solid #e2e2e2;
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+	bottom: 35px;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.cf {
+	clear: both;
+}
+
+@media (max-width: 1500px) {
+	#sqlMaker {
+		display: block;
+		float: left;
+		width: 100%;
+	}
+
+	.container {
+		width: 95%;
+	}
+
+	.output {
+		width: 100%;
+		padding: 0;
+	}
+
+	.logo {
+		width: 250px;
+	}
+}
